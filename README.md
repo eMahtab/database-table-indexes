@@ -101,6 +101,12 @@ order by created_at ASC;
 ```
 !["index lookup and filter and sort"](index-lookup-filter-and-sort.png?raw=true)
 
+## Fast query : using multiple indexes in messages table 
+```sql 
+ select * from messages where sender_id = 8 AND recipient_id = 859523;
+```
+!["query using multiple indexes"](using-multiple-indexes.png?raw=true)
+
 ## Slow/Very Slow query : Table Scan (queried column doesn't have index)
 If you query on a column which don't have index on it, then the query will be slow or very slow or will take unacceptable amount of time, 
 depending on how many records that table have. A Table scan is costly and should be avoided.
