@@ -62,3 +62,8 @@ A Secondary index may or may not be unique, secondary indexes are created to opt
 If you see the `CREATE TABLE` command above for `messages` table, we did not explicitly created secondary indexes, it was automatically created by MySQL for enforcing referential integrity **efficiently**. Operations like `ON DELETE CASCADE` or `ON UPDATE CASCADE` need to locate and modify rows in the referencing table quickly.
 
 You can always check the indexes in a table using `SHOW INDEX FROM` command, to get more details.
+
+
+## Always Check your query :
+
+
