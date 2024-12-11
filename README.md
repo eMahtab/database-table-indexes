@@ -4,7 +4,7 @@
 
 The `test` database contains two tables `users` and `messages`, the tables and records in the tables are created by importing the (https://github.com/eMahtab/mysql-test-dataset/blob/main/users-and-messages/test_database.zip) database dump.
 
-Its medium sized database having in total 110 Million records, so importing the database dump will take a long time.
+Its medium sized database having in total 110 Million records, so **importing the database dump will take a long time**.
 
 !["database dump import"](data-import-successful.png?raw=true)
 
