@@ -92,4 +92,13 @@ select * from messages where sender_id = 44887 order by created_at ASC;
 ```
 !["index lookup and sort"](index-lookup-and-sort.png?raw=true)
 
+## Fast query : using the Secondary index in messages table (index lookup and filter and sort)
+```sql 
+select * from messages 
+where sender_id = 889000 AND 
+created_at BETWEEN '2024-12-01 00:00:00' AND '2024-12-07 23:59:59'
+order by created_at ASC;
+```
+!["index lookup and filter and sort"](index-lookup-filter-and-sort.png?raw=true)
+
 
