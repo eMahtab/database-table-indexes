@@ -101,4 +101,15 @@ order by created_at ASC;
 ```
 !["index lookup and filter and sort"](index-lookup-filter-and-sort.png?raw=true)
 
+## Slow/Very Slow query : Table Scan (queried column doesn't have index)
+If you query on a column which don't have index on it, then the query will be slow or very slow or will take unacceptable amount of time, 
+depending on how many records that table have. A Table scan is costly and should be avoided.
+One of the way to solve this issue, is to create an index on the column on which we want to query.
+
+```sql 
+select count(*) from messages
+where created_at BETWEEN '2024-12-03 00:00:00' AND '2024-12-03 23:59:59';
+```
+!["table scan"](table-scan-created_at.png?raw=true)
+
 
