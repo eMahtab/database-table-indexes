@@ -141,3 +141,10 @@ WHERE TABLE_SCHEMA = 'test' AND TABLE_NAME = 'messages';
 # Query performance improvement after creating index (from over 90 seconds to under 6 seconds)
 
 !["Query performance improvement"](query-performance-improvement.png?raw=true)
+
+# Indexing Overhead :
+Indexing comes with a small cost, whenever a new row inserted or a row deleted, the indexes needs to updated to reflect the updated state of database table.
+Similarly when a row is updated (which updates the indexed column), then also index needs to be updated.
+
+So indexing does adds to slowing down the write operation.
+
