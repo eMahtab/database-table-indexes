@@ -43,7 +43,7 @@ CREATE TABLE messages (
 
 !["users and messages table records"](table-records.png?raw=true)
 
-### Indexes in users and messages tables:
+## Indexes in users and messages tables:
 Below is the output from **`SHOW INDEX FROM users`** and **`SHOW INDEX FROM messages`**
 
 !["users and messages table indexes"](table-indexes.png?raw=true)
@@ -51,3 +51,6 @@ Below is the output from **`SHOW INDEX FROM users`** and **`SHOW INDEX FROM mess
 As we can see from above screenshot, **`users` table have one index, which is Primary index on `id` column**
 
 And **`messages` table have one Primary index (on column `id`) and two Secondary indexes (one on column `sender_id` and other one on column `recipient_id`)**
+
+## Primary and Secondary Index :
+
