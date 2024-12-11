@@ -76,6 +76,6 @@ select * from messages where id = 679802;
 ```sql 
 select count(*) from messages where sender_id = 6452;
 ```
-!["count messages from sender_id"](count-messages-from-sender_id.png?raw=true)
+!["count messages from sender_id"](count-message-from-sender_id.png?raw=true)
 
 
