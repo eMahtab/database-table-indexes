@@ -134,5 +134,7 @@ WHERE TABLE_SCHEMA = 'test' AND TABLE_NAME = 'messages';
 ```
 !["table indexes with size"](table-indexes-with-size.png?raw=true)
 
+# Creating index on created_at column
 
+!["creating index on created_at column"](index-on-created_at.png?raw=true)
 
