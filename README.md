@@ -1,6 +1,7 @@
 # Database Table Indexes
 
-This MySQL dataset is exported from a mysql database named `test`.
+## Database Setup : 
+
 The `test` database contains two tables `users` and `messages`
 
 ### Dataset Size :
