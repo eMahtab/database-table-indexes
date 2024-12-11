@@ -66,16 +66,22 @@ You can always check the indexes in a table using `SHOW INDEX FROM` command, to 
 
 # Always Check your query : EXPLAIN ANALYZE
 
-## Fast query : using the Primary index in messages table
+## Fast query : using the Primary index in messages table (index lookup)
 ```sql 
 select * from messages where id = 679802;
 ```
 !["select message with id"](select-message-with-id.png?raw=true)
 
-## Fast query : using the Secondary index in messages table
+## Fast query : using the Secondary index in messages table (index lookup)
 ```sql 
 select count(*) from messages where sender_id = 6452;
 ```
 !["count messages from sender_id"](count-message-from-sender_id.png?raw=true)
+
+## Fast query : using the Secondary index in messages table (index lookup and sort)
+```sql 
+select * from messages where sender_id = 44887 order by created_at ASC;
+```
+!["index lookup and sort"](index-lookup-and-sort.png?raw=true)
 
 
