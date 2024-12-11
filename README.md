@@ -38,3 +38,7 @@ CREATE TABLE messages (
 ```
 
 !["users and messages table records"](table-records.png?raw=true)
+
+### Indexes in users and messages tables:
+
+!["users and messages table indexes"](table-indexes.png?raw=true)
