@@ -64,8 +64,12 @@ If you see the `CREATE TABLE` command above for `messages` table, we did not exp
 You can always check the indexes in a table using `SHOW INDEX FROM` command, to get more details.
 
 
-## Always Check your query : EXPLAIN ANALYZE
+# Always Check your query : EXPLAIN ANALYZE
 
+## Fast query : using the Primary index in messages table
+```sql 
+select * from messages where id = 679802;
+```
 !["select message with id"](select-message-with-id.png?raw=true)
 
 
