@@ -10,6 +10,8 @@ The `test` database contains two tables `users` and `messages`
 
 **messages table = 100 Million records**
 
+!["users and messages table in test database"](tables.png?raw=true)
+
 #### Schema  : 
 **The tables were originally created using below DDL statements :**
 
@@ -35,5 +37,4 @@ CREATE TABLE messages (
 );
 ```
 
-
-!["users and messages table in test database"](tables.png?raw=true)
+!["users and messages table records"](table-records.png?raw=true)
