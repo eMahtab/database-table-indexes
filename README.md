@@ -6,6 +6,8 @@ The `test` database contains two tables `users` and `messages`, the tables and r
 
 Its medium sized database having in total 110 Million records, so importing the database dump will take a long time.
 
+!["database dump import"](data-import-successful.png?raw=true)
+
 ### Dataset Size :
 
 **users table = 10 Million records**
