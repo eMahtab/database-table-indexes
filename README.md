@@ -17,6 +17,8 @@ The `test` database contains two tables `users` and `messages`
 
 `users` table have id (which denotes user id) as Primary Key, and `messages` table also have id (which denotes message id) as Primary Key. 
 
+`messages` table have columns `sender_id` and `recipient_id` which are Foreign Key, referencing `id` column of `users` table
+
 ```sql
 CREATE TABLE users (
     id BIGINT,
