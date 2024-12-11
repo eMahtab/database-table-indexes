@@ -119,7 +119,14 @@ where created_at BETWEEN '2024-12-03 00:00:00' AND '2024-12-03 23:59:59';
 !["table scan"](table-scan-created_at.png?raw=true)
 
 # Table Indexes and Index Size
-
+```sql
+SELECT TABLE_NAME,
+       DATA_LENGTH / (1024 * 1024 * 1024) AS DataSize_GB,
+       INDEX_LENGTH / (1024 * 1024 * 1024) AS IndexSize_GB,
+       (DATA_LENGTH + INDEX_LENGTH) / (1024 * 1024 * 1024) AS TotalSize_GB
+FROM information_schema.TABLES
+WHERE TABLE_SCHEMA = 'test' AND TABLE_NAME = 'messages';
+```
 !["table indexes with size"](table-indexes-with-size.png?raw=true)
 
 
