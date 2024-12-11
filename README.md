@@ -138,6 +138,6 @@ WHERE TABLE_SCHEMA = 'test' AND TABLE_NAME = 'messages';
 
 !["creating index on created_at column"](index-on-created_at.png?raw=true)
 
-# Query performance improvement after creating index (from over 1 min to under 6 sec)
+# Query performance improvement after creating index (from over 90 seconds to under 6 seconds)
 
 !["Query performance improvement"](query-performance-improvement.png?raw=true)
