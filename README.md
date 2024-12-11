@@ -14,6 +14,7 @@ The `test` database contains two tables `users` and `messages`
 
 #### Schema  : 
 **The tables were originally created using below DDL statements :**
+
 `users` table have id (which denotes user id) as Primary Key, and `messages` table also have id (which denotes message id) as Primary Key. 
 
 ```sql
