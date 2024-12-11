@@ -58,3 +58,7 @@ And **`messages` table have one Primary index (on column `id`) and two Secondary
 A Primary index is always unique, and it uniquely identifies each row in the table and enforces uniqueness on the primary key column(s). A table can have only one primary index.
 
 A Secondary index may or may not be unique, secondary indexes are created to optimize query performance for columns not covered by the primary index. A table can have multiple secondary indexes.
+
+If you see the `CREATE TABLE` command above for `messages` table, we did not explicitly created secondary indexes, it was automatically created by MySQL for enforcing referential integrity **efficiently**. Operations like `ON DELETE CASCADE` or `ON UPDATE CASCADE` need to locate and modify rows in the referencing table quickly.
+
+You can always check the indexes in a table using `SHOW INDEX FROM` command, to get more details.
