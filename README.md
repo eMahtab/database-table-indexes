@@ -44,6 +44,7 @@ CREATE TABLE messages (
 !["users and messages table records"](table-records.png?raw=true)
 
 ## Indexes in users and messages tables:
+
 Below is the output from **`SHOW INDEX FROM users`** and **`SHOW INDEX FROM messages`**
 
 !["users and messages table indexes"](table-indexes.png?raw=true)
@@ -54,3 +55,6 @@ And **`messages` table have one Primary index (on column `id`) and two Secondary
 
 ## Primary and Secondary Index :
 
+A Primary index is always unique, and it uniquely identifies each row in the table and enforces uniqueness on the primary key column(s). A table can have only one primary index.
+
+A Secondary index may or may not be unique, secondary indexes are created to optimize query performance for columns not covered by the primary index. A table can have multiple secondary indexes.
