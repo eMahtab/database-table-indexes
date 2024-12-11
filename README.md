@@ -72,4 +72,10 @@ select * from messages where id = 679802;
 ```
 !["select message with id"](select-message-with-id.png?raw=true)
 
+## Fast query : using the Secondary index in messages table
+```sql 
+select count(*) from messages where sender_id = 6452;
+```
+!["count messages from sender_id"](count-messages-from-sender_id.png?raw=true)
+
 
