@@ -119,6 +119,11 @@ where created_at BETWEEN '2024-12-03 00:00:00' AND '2024-12-03 23:59:59';
 !["table scan"](table-scan-created_at.png?raw=true)
 
 # Table Indexes and Index Size
+
+Three indexes on `messages` table take up around 7.4 GB space.
+
+To get the total size of index and actual data stored inside a table, use below sql command
+
 ```sql
 SELECT TABLE_NAME,
        DATA_LENGTH / (1024 * 1024 * 1024) AS DataSize_GB,
