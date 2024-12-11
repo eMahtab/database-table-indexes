@@ -50,4 +50,4 @@ Below is the output from **`SHOW INDEX FROM users`** and **`SHOW INDEX FROM mess
 
 As we can see from above screenshot, **`users` table have one index, which is Primary index on `id` column**
 
-And **`messages` table have one Primary index (on column `id`) and two Secondary indexes (one of column `sender_id` and other on column `recipient_id`)**
+And **`messages` table have one Primary index (on column `id`) and two Secondary indexes (one on column `sender_id` and other one on column `recipient_id`)**
