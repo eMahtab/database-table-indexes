@@ -78,6 +78,14 @@ select count(*) from messages where sender_id = 6452;
 ```
 !["count messages from sender_id"](count-message-from-sender_id.png?raw=true)
 
+## Fast query : using the Secondary index in messages table (index lookup and filter)
+```sql 
+select * from messages
+where sender_id = 12098 AND 
+created_at BETWEEN '2024-12-05 00:00:00' AND '2024-12-05 23:59:59';
+```
+!["index lookup and sort"](index-lookup-and-filter.png?raw=true)
+
 ## Fast query : using the Secondary index in messages table (index lookup and sort)
 ```sql 
 select * from messages where sender_id = 44887 order by created_at ASC;
